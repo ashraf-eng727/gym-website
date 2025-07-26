@@ -1,0 +1,228 @@
+body{
+    background:url("./img1.jpeg");    
+}
+header{
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+}
+header img{
+    width:100px;
+    height:100px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+header div h1{
+    color: white;
+    font-size: 4rem;
+    margin-left: 360px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+header div p{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-left:360px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav{
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 50px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.service-item, .testimonials, .content{
+    display: flex;
+    flex-direction: row;
+    opacity: 1.0;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+div h2,
+.contact h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: azure;
+}
+
+
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    border: 2px solid white;
+    
+}
+.services h3,p{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+}
+.p{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.b{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.n{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.testimonial {
+            margin-bottom: 20px;
+            
+        }
+
+.testimonial p {
+            font-style: italic;
+            display: block;
+            margin-left: 20px;
+        }
+
+.testimonial strong {
+           
+            margin-top: 10px;
+            color: white;
+            margin-left: 600px;
+        }
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: auto;
+}
+input, textarea{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+input:focus{
+     border: 5px solid skyblue;
+}
+textarea:focus{
+    border: 5px solid skyblue;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-right: 160px;
+    margin-left: 160px;
+}
+button:hover{
+    background-color: #3c3c3c;
+}
+button:active{
+    background-color: white;
+    color: black;
+        border: 2px solid black;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+@media (max-width: 786px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 auto;
+    }
+
+    header div h1,
+    header div p {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .service-item,
+    .testimonials,
+    .contact {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .services {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .p, .b, .n {
+        width: 90%;
+        height: auto;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    button {
+        margin: auto;
+        width: 50%;
+    }
+
+    .testimonial {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Optional: reduce title font size slightly for small screens */
+    div h2,
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+}
